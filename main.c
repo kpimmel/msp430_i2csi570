@@ -38,11 +38,11 @@ void main(void)
     i2cWriteBuf[3]=0x7C ; 
     i2cWriteBuf[4]=0x5D ; 
     i2cWriteBuf[5]=0x39; 
-		kpprintf("14.2 MHz\r\n");
+    kpprintf("14.2 MHz\r\n");
 
     kpprintf("init i2c...\r\n");
-		i2c_init();
-		__delay_cycles(20000);
+    i2c_init();
+    __delay_cycles(20000);
 
       
     //Freeze DCO
